@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Silkscreen:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/images/bodywall.jpeg);
+}
+.dots{
+    display: flex;
+    gap: 0.1em;
+}
+
+.dots :nth-last-child(-n +2){
+    background-color: burlywood;
+}
+
+.dotsForHTML :nth-last-child(2 ) {
+    background-color: rgb(83, 58, 24);
+}
+.dotsForCSS :nth-last-child(2 ) {
+    background-color: rgb(83, 58, 24);
+}
+.dotsForSCSS :nth-last-child(2) {
+    background-color: rgb(143, 101, 46);
+}
+.dotsForFIGMA :nth-last-child(-n +2 ) {
+    background-color: burlywood;
+}
+.dotsForJSON :nth-last-child(2 ) {
+    background-color: rgb(143, 101, 46);
+}
+.dotsForJS :nth-child(4) {
+    background-color: rgb(143, 101, 46);
+}
+.dotsForFIREBASE :nth-child(3) {
+    background-color: rgb(143, 101, 46);
+}
+.dotsForREDUX :nth-child(1n + 3) {
+    background-color: burlywood;
+}
+.dotsForGIT :nth-last-child(-n ) {
+    background-color: rgb(143, 101, 46);
+}
+.dotsForPHP :nth-child(3) {
+    background-color: burlywood;
+}
+.dotsForPython :nth-child(3 ) {
+    background-color: rgb(143, 101, 46);
+}
+
+
+.dotsForEng :nth-child(3) {
+    background-color: rgb(143, 101, 46);
+}
+.dotsForRuss :nth-child(4) {
+    background-color: rgb(83, 58, 24);
+}
+.dotsForArm :nth-child(n) {
+    background-color: rgb(83, 58, 24);
+}
+
+
+.dot{
+    width: 13px;
+    height: 13px;
+    border: 1px solid rgb(177, 141, 94);
+    border-radius: 100%;
+    background-color: rgb(83, 58, 24);
+}
+
+.all{
+    padding: 0% 0%  0% 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(/images/bodywall.jpeg);
+}
+
+.image{
+    border: 2px solid black;
+    width: 155px;
+    height: 210px;
+    position: absolute;
+    top: 6em;
+    left: 3em;
+    border-radius: 1.5mm; 
+    z-index: 3;
+    box-shadow: 1mm 2mm 3mm rgba(0, 0, 0, 0.856);
+}
+.leftSide{
+    z-index: 2;
+    min-width: fit-content;
+    height: fit-content;
+    margin-top: 0.7%;
+    padding: 30px 45px 18px 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 1mm;
+    border: 2px solid rgb(129, 132, 129);
+    border-radius: 3mm;
+    background-image: url(/images/backgroundSolid.jpg);
+    background-repeat: round;
+    box-shadow: 2px 3px 15px rgb(255, 255, 255);
+    font-family: 'Franklin Gothic medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5mm;
+
+    .abilitiesCaption{
+        color: rgb(255, 214, 161);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+        font-family: Geneva, Tahoma, sans-serif;
+        margin-bottom: 4px;
+    }
+    .aboutMe{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1px;
+        color:snow
+    }
+    .professionalSkills{
+        color: aliceblue;
+    
+        .proffSkillsContainer{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 0.7em;
+            justify-content: center;
+            align-items: center;
+        
+            .proffSkillsNames{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .proffSkillsDots{
+                margin-top: 2px;
+                display: flex;
+                flex-direction: column;
+                gap: 6%;
+            }
+            .proffSkillsLeftSide{
+                display: flex;
+                gap: 5px;
+            }
+            .proffSkillsRightSide{
+                display: flex;
+                gap: 5px;
+            }
+        }
+    }
+    .languages{
+    
+        .languageContainer{
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+        }
+        .langText{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            color: aliceblue;
+        }
+        .langDots{
+            display: flex;
+            flex-flow: column;
+            gap: 8px;
+        }
+    }
+    .personalSkills{
+        color: snow;
+        .skillsList{
+            display: flex;
+            justify-content: center;
+            gap: 4em;
+            margin-left: 1em;
+        }
+    }
+    .contactMe{
+        color: snow;
+    
+        .contacts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .contactsLeft{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+            }
+            .contactsRight{
+                display: flex;
+                gap: 5px;
+                margin-top: 3px;
+            }
+            .contactsText{
+                color: aliceblue;
+                text-decoration: none;
+                &:hover{
+                    color: burlywood;
+                    text-shadow:2px 2px 10px  rgb(0, 0, 0);
+                }
+            }
+            .wvt{
+                margin-top: 3px;
+            }
+        }
+    }
+    
+    .leftHr1{
+        width: 65%;
+        margin: 0 auto;
+        background-color: rgb(163, 115, 51);
+        border: 2px solid rgb(163, 115, 51);
+        border-radius: 1em;
+        box-shadow: 2px 2px 5px rgb(0, 0, 53);
+    }
+    .leftHr2{
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(163, 115, 51);
+        border: 2px solid rgb(163, 115, 51);
+        border-radius: 1em;
+        box-shadow: 2px 2px 5px rgb(0, 0, 53);
+    }
+    .leftHr3{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgb(163, 115, 51);
+        border: 2px solid rgb(163, 115, 51);
+        border-radius: 1em;
+        box-shadow: 2px 2px 5px rgb(0, 0, 53);
+    }
+    .leftHr4{
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(163, 115, 51);
+        border: 2px solid rgb(163, 115, 51);
+        border-radius: 1em;
+        box-shadow: 2px 2px 5px rgb(0, 0, 53);
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max-content;
+    height: min-content;
+    padding: 30px 30px 10px 120px;
+    margin: 5px 0px 0px 0px;
+    position: relative;
+    right: 6em;
+    border-radius: 5mm;
+    background-image: url(/images/brown.jpg);
+    background-position: 100%;
+    box-shadow: 5px 5px 15px burlywood;
+    color: rgb(0, 0, 0);
+    text-shadow: 7mm 3mm 9mm  rgb(225, 157, 85);
+
+    .nameCaption{
+        margin-top: 2.2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .myName{
+            font-family: 'Russo One', sans-serif;
+            font-weight: 100;
+            font-size: 50px;
+            margin-bottom: -5px;
+        }
+    }
+    .mainInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        font-weight: 600;
+        margin-top: 5px;
+    
+        .university{
+            margin-left: 10%;
+        }
+        .smartCode{
+            margin-left: -15px;
+        }
+        .workExperience{
+            margin-left: 45px;
+            text-shadow: -2px -.5px 20px rgb(255, 178, 96);
+        }
+        .university,.college,.smartCode,.workExperience{
+            font-family:  'Arial Narrow ', sans-serif;
+            font-size: 15px;
+        }
+    }
+    .divideandruel{
+        width: 35%;
+        border-color: rgb(115, 74, 38);
+    }
+    .rightHr{
+        width: 80%;
+        border: 2px solid rgb(163, 92, 0);
+        border-radius: 1mm;
+        box-shadow: 2px 2px 5px rgb(255, 211, 154);
+    }
+    .smartcodehref, .npua{
+        color: black;
+        text-decoration: none;            
+        &:hover{
+            color: burlywood;
+            text-shadow:2px 2px 10px  rgb(0, 0, 0);
+        }
+    }
+    
+}
+
+.motivation{
+    overflow: hidden;
+    border: none;
+    background-image: url(/images/brownButton.jpg);
+    background-repeat:round;
+    cursor: pointer;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 239, 218);
+    padding: 2px 5px 2px 2px;
+    border-radius: 3em 10em 2em 1em ;
+    position: absolute;
+    right: 0.01em;
+    top: 0.02px;
+    z-index: 1;
+    max-height: 30px;
+    &:hover{
+        opacity: 90%;
+        transform: scale(1.05);
+        box-shadow: -2px 3px 10px burlywood;
+    }
+}
+
+.mainletter{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    gap: 47px;
+    justify-content: center;
+    align-items: center;
+}
+
+.myLetter{
+    background-color: rgba(123, 123, 123, 70%);
+    border: 2px solid gray;
+    border-radius: 2mm;
+    padding: 15px;
+    min-width: min-content;
+    color: black;
+    text-shadow: 2px 2px 5px rgb(49, 49, 49);
+    font-size: 25px;
+}
+
+.letsgoback{
+    width: 100px;
+    height: 30px;
+    font-family: 'Silkscreen', cursive;
+    background-color: rgb(84, 84, 84);
+    border: 2.5px solid rgb(54, 54, 54);
+    border-radius: 1.2mm;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(110, 110, 110);
+    }
+}
+
+.trnback{
+    // position: absolute;
+    margin: 0.5% 0% 0% 2%;
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+    .rightSide{
+        position: relative;
+        padding: 1em 1em 2.5em 10em;
+        font-size: 13px;
+        .mainInfo{
+            font-size: 12px;
+            .university,.college,.smartCode,.workExperience{
+                font-size: 11.5px;
+            }
+            .workExperience{
+                margin-left: 10%;
+            }
+        }
+        .nameCaption{
+            font-size: 13px;
+            .myName{
+                font-size: 27px;    
+            }
+        }
+    }
+    .motivation{
+        padding: 2px 5px 2px 2px;
+        font-weight:normal;
+        font-size: 10px;
+        top: 1px;
+        right: 1.5px;
+        border-radius: 3em 10em 2em 1em ;
+    }
+    .dot{
+        width: 8px;
+        height: 8px;
+    }
+    .leftSide{
+        padding: .5em 2em 0.5em 2em;
+        font-size: 2.9mm;
+        .abilitiesCaption{
+            font-size: 12px;
+        }
+        .professionalSkills{
+            .proffSkillsContainer{
+                .proffSkillsDots{
+                    margin-top: 3.5%;
+                    gap: 9.5%;
+                }
+            }
+        }
+        .languages{
+            .languageContainer{
+                .langText{
+                    gap: 3.3px;
+                }
+                .langDots{
+                    gap: 8px;
+                }
+            }
+        }
+    }
+    .image{
+        position: absolute;
+        left: 9%;
+        top: 10%;
+        width: 110px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 724px) {
+    
+    .all{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0% 100% 0%;
+        gap: 30px;
+    }
+    .image{
+        margin-top: 5%;
+        position: static;
+    }
+    .rightSide{
+        position: static;
+        padding: 0em 0em 1em 0em;
+    }
+    .motivation{
+        position: static;
+        padding: 2px 7px 2px 7px;
+        margin-top: 8%;
+        font-weight:normal;
+        font-size: 10px;
+        border-radius: 1.5em 10em 1.5em 10em ;
+        
+    }
+    .dot{
+        width: 8px;
+        height: 8px;
+    }
+    .leftSide{
+        position: static;
+        width: 30em;
+        padding-top: 2em;      
+        min-height: 52em;
+        font-size: 3mm;
+        gap: 0.7em;
+        background-repeat:repeat;
+        .abilitiesCaption{
+            font-size: 15px;
+        }
+        .personalSkills{
+            .skillsList{
+                gap: 4.5em;
+            }
+        }
+        .professionalSkills{
+            .proffSkillsContainer{
+                gap: 15%;
+                .proffSkillsDots{
+                    margin-top: 3%;
+                    gap: 9.8%;
+                }
+            }
+        }
+        .languages{
+            .languageContainer{
+                gap: 20px;
+                .langText{
+                    gap: 0.5em;
+                }
+                .langDots{
+                    margin-top: 2px;
+                    gap: 0.8em;
+                }
+            }
+        }
+    }
+
+    .trnback{
+        position: absolute;
+        margin: 8px 0px 0px 29px;
+    }
+}
+

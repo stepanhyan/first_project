@@ -1,0 +1,341 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@mixin flex() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.container{
+  width: 100%;
+  padding-block: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  z-index: 2;
+
+  
+  #formsumb{
+
+    @include flex;
+    gap: 1em;
+    width: 17em;
+    height: 26em;
+    background: linear-gradient(#2d2929, #bebebe,#2d2929);
+    padding-block: 1em;
+    // border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    // box-shadow:  2px 5px 5px 5px rgb(3, 116, 25);  
+    [type="text"], [type="password"]{
+        // width: 8rem;
+        height: 1.9em;
+        font-size: 15px;
+        border-radius: 15em;
+        padding: 10px;
+    }
+    .fileDiv{
+        padding: 2px;
+        border: 2px solid #494949;
+        border-radius: 2mm;
+        width: 200px;
+        #lblInfo{
+          font-size: 20px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+          .imageIcon{
+            margin-top: 2%;
+            cursor: pointer;
+            font-size: 1.5em;
+            &:hover{
+              color: rgb(99, 99, 99);
+            }
+          }
+          .fileinput{
+            display: none;
+          }
+        }
+    }
+    #lblTxt{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    [type="submit"]{
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 2mm;
+        border-style: none;
+        cursor: pointer;
+        transition: transform 100ms;
+        box-shadow: 5px 5px 5px rgb(116, 116, 116);
+        &:hover{
+          transform: translate(3px, 4px);
+          box-shadow: 1px 1px 1px rgb(116, 116, 116);
+          }
+    }
+    #textarea{
+          resize: none;
+          border-radius: 1.5mm;
+          width: 15em;
+          height: 10em;
+    }
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .players{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 26em;
+      background: linear-gradient(#e5d1d1 ,#272727, #e5d1d1);
+      border-radius: 20px;
+      // border: 2px solid rgba(0, 0, 0, 0.628);
+      // box-shadow:  2px 5px 5px 5px rgb(3, 116, 25),rgb(255, 255, 255);
+      #rightbtn, #leftbtn{
+        box-shadow: 5px 5px 2.5px rgb(155, 155, 155);
+        border-radius: 2.5mm;
+        border: none;
+        margin: 10px;
+        padding: 8px 10px;
+        background:linear-gradient(#e5d1d1 ,black, #e5d1d1);
+        color: aliceblue;
+        cursor: pointer;
+        transition: transform box-shadow 200ms ease-in;
+        &:hover{
+          transform: translate(2px, 3px);
+          box-shadow: 1px 1px 1px rgb(155, 155, 155);
+        }
+      }
+      .slider{
+        border-radius: 12px;
+        margin-bottom: 15%;
+        width: 11em;
+        height: 22em;
+        overflow: hidden ;
+      
+        .swrapper{
+          width: max-content;
+      
+          .card{
+              background-color: aliceblue;
+              float: left;
+              width: 11em;
+              height: 22em;
+              border-radius: 12px;
+              padding:10px;
+              transition: transform 400ms ease-out;
+              img{
+                width: 100%;
+                min-height: 13.5em;
+                max-height: 13.8em;
+              }
+          
+              hr:nth-of-type(2){
+              width: 50%;
+              margin: 0 auto;
+              border: 1px solid rgb(0, 0, 0);
+              border-radius: 2mm;
+              }
+              .containerForP{
+                height: 6.5em;
+                overflow: hidden;
+                font-size: 10px;
+                word-wrap:break-word;
+                text-align: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight:bold;
+                color: rgb(81, 79, 79);
+                
+                p{
+                  // width: 100%;
+                  text-align: center;
+                  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  font-size: 10px;
+                  font-weight:bold;
+                  // word-wrap:break-word;
+                  color: rgb(81, 79, 79);
+                }
+              }
+              p{
+                text-align: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 15px;
+                font-weight:bold;
+                color: rgb(81, 79, 79);
+              }
+              b{
+                font-size: 15px;
+                  display: block;
+                  text-align: center  ;
+              }
+          }
+        }
+      }
+    }
+
+    .sliderDots{
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      gap: 8px;
+      margin-top: -45px;
+      .btnBlock{
+          display: flex;
+          flex-direction: row-reverse;
+          gap: 20px; 
+          #remButn, .addedPlayer{
+              color: #000000;
+              width: 2em;
+              height: 1.35em;
+              border-radius: 10px;
+              border: none;
+              transition:  background-color 500ms ease-in-out;
+              cursor: pointer;
+              box-shadow: 2px 2px  2px  rgb(100, 100, 100);
+              
+              &:hover{
+                  background-color: #212121;
+                  color: rgb(232, 232, 232);
+                  box-shadow: none;
+              }
+          }
+      }
+  }
+  }
+}
+
+#dots{
+    display: flex;
+    gap: 8px;
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: rgb(80, 80, 80);
+      opacity: 80%;
+      border-radius: 50%;
+      box-shadow: 3.5px 3.5px 3px rgb(0, 0, 0);
+      cursor: pointer;
+      transition: transform background-color 200ms;
+      &:hover{
+        background-color: rgb(232, 232, 232);
+        // border: 0.5px solid black;
+        box-shadow: 0px 0px 1px rgb(0, 0, 0);
+        transform: translate(2.5px, 2.5px);
+      }
+      &.selected{
+        background-color:aliceblue;
+      }
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+  .container{
+    #formsumb{
+      gap: 0.5em;
+      width: 13em;
+      height: 22em;    
+      [type="text"], [type="password"]{
+        width: 13em;
+        height: 1.8em;
+        font-size: 14px;
+      }
+      .fileDiv{
+          padding: 3px 0px 10px 0px;
+          width: 180px;
+          #lblInfo{           
+            .imageIcon{
+              margin-top: 1%;
+              font-size: 1.35em;
+
+            }
+          }
+      }
+      [type="submit"]{
+        padding: 5px;
+      }
+      #textarea{
+          resize: none;
+          border-radius: 1.5mm;
+          width: 14.5em;
+      }
+      
+    }
+  
+    article{
+      .players{
+        height: 22em;
+        width: 13em;
+        #rightbtn, #leftbtn{
+          border-radius: 2mm;
+          margin: 3px;
+          padding: 5px 3.5px;
+        }
+        .slider{
+          margin-bottom: 15%;
+          width: 8em;
+          height: 17.5em;
+          .swrapper{
+            .card{
+              width: 8em;
+              height: 17.5em;
+              img{
+                width: 100%;
+                min-height: 60%;
+              }
+              .containerForP{
+                height: 6em;
+              }
+            }
+          }
+        }
+      }
+  
+      .sliderDots{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 8px;
+        margin-top: -45px;
+        .btnBlock{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px; 
+            #remButn, .addedPlayer{
+                color: #048f37;
+                width: 2em;
+                height: 1.35em;
+                border-radius: 10px;
+                border: none;
+                transition:  background-color 500ms ease-in-out;
+                cursor: pointer;
+                box-shadow: 2px 2px  2px  rgb(100, 100, 100);
+                
+                &:hover{
+                    background-color: #048f37;
+                    color: rgb(32, 32, 32);
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    }
+  }
+}
+  
+
+
+
+  

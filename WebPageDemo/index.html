@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WebPage Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+
+<div class="main">
+  
+  
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo"><a href="#">WebPage</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="register.html">Autorise</a></li>
+          <li>
+            <a href="#" class="desktop-link">Features</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Drop Menu F1</a></li>
+              <li><a href="#">Drop Menu F2</a></li>
+              <li><a href="#">Drop Menu F3</a></li>
+              <li><a href="#">Drop Menu F4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+
+  <div class="dummy-text">
+    <div class="parallax">
+      <div class="blend">
+        <h1>Something You Write Here</h1>
+      </div>
+    </div>
+    <div class="section">
+      <div class="sometext">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id in ea consectetur doloremque mollitia eveniet, maxime dolor minus voluptatibus at repellendus delectus sapiente dolores fuga saepe. Expedita aliquid quibusdam odio!Lorem
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="gradient"></div>
+    </div>
+    <div class="parallax"></div>
+    <!-- <div class="specdiv">
+      <div id="special" class="parallax"></div>
+    </div> -->
+    <div class="section">
+      <div class="images">
+        <img src="https://images.pexels.com/photos/5652974/pexels-photo-5652974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/5653005/pexels-photo-5653005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/5652998/pexels-photo-5652998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <img src="https://images.pexels.com/photos/5652972/pexels-photo-5652972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+      </div>
+      <div class="gradient"></div>
+    </div>
+    <div class="parallax"></div>
+    <div class="section" >
+      <section class="container">
+        <form action="" id="formsumb">
+          <input type="text" placeholder="Player's Name" maxlength="18">
+          <input type="text" placeholder="Player's Club" maxlength="15" >
+          <div class="fileDiv">
+            <label id ="lblInfo" for="img">Player's Photo <br>
+              <i class="fa-solid fa-image imageIcon"></i>
+              <input class="fileinput" type="file" name="img" multiple>
+            </label>  
+          </div>
+          <label id ="lblTxt" for="textarea">Player's Info </label>
+          <textarea name="textarea"  id="textarea" cols="50" rows="15" maxlength="300"></textarea>
+          <input type="submit">
+        </form>
+        <article>
+          <section class="players" id="playSec">
+            <button id="leftbtn" class="leftbutton"><i class="fa-solid fa-circle-chevron-left leftbutton"></i></button>
+            <div class="slider">
+              <div class="swrapper">
+                <div class="card" id="c1">
+                    <b class="name">Kobe Bryant</b>
+                    <img src="img/bryant.jpg" alt="" aria-valuetext="1">
+                    <hr>
+                    <p class="club">L.A. Lakers</p>
+                    <hr>
+                    <div class="containerForP"><p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint odio asperiores necessitatibus voluptatibus,sit amet consectetur adipisicing elit.</p></div>
+                </div>
+                <div class="card" id="c2">
+                    <b class="name">Steph Curry</b>
+                    <img src="img/curry.jpg" alt="" aria-valuetext="2">
+                    <hr>
+                    <p class="club">Warriors</p>
+                    <hr>
+                    <div class="containerForP"><p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint odio asperiores necessitatibus sdsdsassa,sit amet consectetur adipisicing elit.</p></div>
+                </div>
+                <div class="card" id="c3">
+                    <b class="name">Ja Morant</b>
+                    <img src="img/morant.jpg" alt="" aria-valuetext="3">
+                    <hr>
+                    <p class="club">Grizzlies </p>
+                    <hr>
+                    <div class="containerForP"><p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat voluptate fugit et facilis praesentium. Doloribus minus commodi neque</p></div>
+                </div>
+                <div class="card"  id="c4">
+                    <b class="name">Giannis Antetokounmpo</b>
+                    <img  src="img/giannis.jpg" alt="" aria-valuetext="4">
+                    <hr>
+                    <p class="club">Bucks </p>
+                    <hr>
+                    <div class="containerForP"><p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid vero incidunt vitae blanditiis libero? Dolor earum at,sit amet consectetur.</p></div>
+                </div>
+                <div class="card"  id="c5">
+                    <b class="name">Zion Williamson</b>
+                    <img  src="img/Zion_Williamson.jpg" alt="" aria-valuetext="5">
+                    <hr>
+                    <p class="club">New Orleans</p>
+                    <hr>
+                    <div class="containerForP"><p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid vero incidunt vitae blanditiis libero? sit amet consectetur adipisicing.</p></div>
+                </div>
+                <div class="card"  id="c6">
+                    <b class="name">Allen Iverson</b>
+                    <img  src="img/allen.jpeg" alt="" aria-valuetext="6">
+                    <hr>
+                    <p class="club">Sixers</p>
+                    <hr>
+                    <div class="containerForP"><p class="info">American professional mixed martial fighter, Ultimate Fighting Champion.    <br>
+                      He has been in the UFC since winning The Ultimate Fighter 5.</p></div>
+                </div>
+              </div>
+            </div>
+            <button id="rightbtn" class="rightbutton"><i class="fa-sharp fa-solid fa-circle-chevron-right rightbutton"></i></button>
+          </section>
+          <div class="sliderDots">
+                <div class="btnBlock">
+                  <button id="remButn"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
+                </div>
+          </div>
+        </article>
+      </section>
+      <div class="gradient"></div>
+    </div>
+    <div class="parallax"></div>
+    <div class="section">
+      <div class="xo">
+        <div class="area-wrapper">
+          <h1 id="TicTac">Tic Tac</h1>
+            <section id="area">
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+              <div class="blokbox"></div>
+            </section>
+            <div id="result-wrapper">
+              <div id="overlay"></div>
+              <div id="window">
+                <div id="content">content</div>
+                <div id="btn-close">Restart Game</div>
+              </div>
+            </div>  
+        </div>
+      </div>
+      <div class="gradient"></div>
+    </div>
+    <div class="parallax"></div>
+  </div>
+  
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>About us</h2>
+        <div class="content2">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quo distinctio ipsum officia? Ipsam culpa facere, vel distinctio dicta laboriosam exercitationem atque placeat molestiae explicabo aspernatur pariatur similique repellendus in!</p>
+          <div class="social">
+            <a href="https://www.facebook.com/styop.hovhannisyan.8/"><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+            <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="content2">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">Armenia, Yerevan</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+374-41-08-28-71</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">stepan.hov.yan@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content2">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By Myself | </span>
+          <span class="far fa-copyright"></span><span> 2022</span>
+        </center>
+      </div>
+  </footer>
+    
+  </div>
+  </body>
+  </html>
+  
