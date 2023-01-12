@@ -8,7 +8,7 @@ let email = document.getElementById("email")
 let password = document.getElementById("password")
 let password2 = document.getElementById("password2")
 
-const formDivs =  Array.from(form.getElementsByClassName("form-control"))
+let formDivs =  Array.from(form.getElementsByClassName("form-control"))
 
 form.addEventListener('change', (e)=>{
     checkInputs()
