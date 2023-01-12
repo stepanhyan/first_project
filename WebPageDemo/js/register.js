@@ -136,7 +136,6 @@ loginbtn.addEventListener("click", (e)=>{
         window.location.href = "login.html"
         playSubmit()
     }
-    // alert("klris")
 })
 
 function playLoser() {
@@ -146,30 +145,6 @@ function playSubmit() {
     submitsoundeffect.play();
 }
 
-
-// const form = document.forms[0]
-
-// // let playStop = document.querySelector(".playStop")
-
-// form.addEventListener("submit", function(e){
-//     e.preventDefault()
-//     if(
-//         form.elements[0].value == "styop" &&
-//         form.elements[1].value == "password"
-//     ){
-//         localStorage.setItem('User_Styop' , 'Loggedin_true')
-//     }
-      
-// });
-
-
-
-// function pauseLoser() {
-//     losersoundeffect.pause();
-// }
-// function pauseSubmit() {
-//     submitsoundeffect.pause();
-// }
 
 
 
