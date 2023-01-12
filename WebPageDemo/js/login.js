@@ -1,12 +1,10 @@
 let login = document.querySelector("#loginbtn")
-
 login.addEventListener("click", checkData)
 
 function checkData(e){
   e.preventDefault()
   let enterName = document.getElementById("username").value;
   let enterPass = document.getElementById("password").value;
-
   let getName = localStorage.getItem('userName')
   let getPass = localStorage.getItem('userPassword')
 
@@ -15,8 +13,7 @@ function checkData(e){
       if(enterPass == getPass)
       {
         alert('Login Succsess \nWelcome dear' +' '+ getName)
-        location.href = "index.html"
-        
+        location.href = "index.html"        
       }
       else
       {

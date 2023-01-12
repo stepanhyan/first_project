@@ -7,8 +7,5 @@ dots.forEach(elem => {
         elem.appendChild(dot)    
     }
 })
-
 document.querySelector(".motivation").addEventListener('click', ()=> location.href = "letter.html" );
-
-
 document.querySelector(".trnback").addEventListener('click', ()=> location.href = "index.html" );

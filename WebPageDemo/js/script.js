@@ -1,4 +1,3 @@
-
 const form = document.getElementById("formsumb")
 const article = document.querySelector("article")
 const modelName = form.elements[0]
@@ -6,17 +5,16 @@ const modelClub = form.elements[1]
 const modelPhoto = form.elements[2]
 const modelInfo = form.elements[3]
 const playSec = document.getElementById("playSec")
-let cards =  Array.from(playSec.getElementsByClassName("card")) 
 const dltBtn = document.getElementById("remButn") 
 const wrap = document.querySelector(".swrapper")
 const sliderDots = document.querySelector(".sliderDots")
+let cards =  Array.from(playSec.getElementsByClassName("card")) 
 //==================================================================================================================//
 
 const area = document.getElementById("area")
 const resultWrapper = document.getElementById("result-wrapper")
 const btnClose = document.getElementById("btn-close")
 const overlay = document.getElementById("overlay")
-
 
 //==================================XO==============================================================================//
 
@@ -121,7 +119,7 @@ imageIcon.addEventListener('click', ()=>{
 function loadFile(event){
   cards[active].children[1].src = URL.createObjectURL(event.target.files[0]);
   cards[active].children[1].onload = function() {
-      URL.revokeObjectURL(cards[active].children[1].src) // free memory
+      URL.revokeObjectURL(cards[active].children[1].src)
   }
 };
 
@@ -136,8 +134,6 @@ submit.addEventListener('submit', (event)=>{
   // modelPhoto.addEventListener("change", loadFile)
   // cards[active].children[1].src = `public/images/${""}` + modelPhoto.files[0].name
 })
-
-
 
 function setSlider(){
   for(let i of cards){
@@ -200,8 +196,6 @@ addPlayer.className = "addedPlayer"
     
 addPlayer.addEventListener("click", ()=>{
   if(dots.children.length >=15) return
-
-
   const newCard = document.createElement("div")
   newCard.classList.add("card")
   const name = document.createElement("b")
@@ -209,7 +203,6 @@ addPlayer.addEventListener("click", ()=>{
   const hr = document.createElement("hr")
   const club = document.createElement("p")
   const hr2 = document.createElement("hr")
-
   newCard.appendChild(name)
   newCard.appendChild(img)
   newCard.appendChild(hr)
@@ -228,10 +221,8 @@ addPlayer.addEventListener("click", ()=>{
   dots.appendChild(dot);
   active = cards.length - 1
   console.log(newCard)
-  
   setSlider()
 });
-
 
 btnBlock.append(addPlayer)
 sliderDots.appendChild(dots)
@@ -239,7 +230,3 @@ addPlayer.innerHTML = '<i class="fa-solid fa-circle-plus"></i>'
 setSlider()
 setDots()
 //=========================SLIDER=END=============================//
-
-
-
-
