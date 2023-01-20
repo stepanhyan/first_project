@@ -234,8 +234,15 @@ let img1 = document.getElementById('img1')
 let img2 = document.getElementById('img2') 
 let img3 = document.getElementById('img3')
 let img4 = document.getElementById('img4')
+let defimg = document.getElementById('defimg')
 let parallax = document.querySelectorAll('.parallax')
 
+
+defimg.addEventListener('click',()=>{
+  parallax.forEach(elem => {
+    elem.style.backgroundImage = "url('https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')"
+  })
+})
 
 img1.addEventListener('click',()=>{
   parallax.forEach(elem => {
@@ -261,3 +268,9 @@ img4.addEventListener('click',()=>{
   })
 })
 
+//==================================================//
+let userLoged = document.getElementById('userLoged')
+
+if(localStorage.getItem('userName') != null){
+  userLoged.innerText = "Welcome dear " + localStorage.getItem('userName') 
+}

@@ -678,9 +678,18 @@ nav .content .links {
   font-family: "Poppins", sans-serif;
 }
 
+#userLoged {
+  z-index: 100;
+  color: snow;
+  margin-top: 5%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .parallax {
   background-image: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  min-height: 500px;
+  width: 100vw;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -735,14 +744,14 @@ nav .content .links {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 30em;
+  min-height: 450px;
 }
 .blend h1 {
   z-index: 1;
   margin-bottom: 5mm;
-  font-size: 7vw;
+  font-size: 5vw;
   mix-blend-mode: overlay;
-  color: rgb(83, 46, 0);
+  color: rgb(49, 49, 49);
   opacity: 0.99;
   white-space: nowrap;
 }
@@ -760,6 +769,25 @@ nav .content .links {
 .xo {
   z-index: 2;
   width: 100%;
+}
+
+.fa-rotate-left {
+  z-index: 20;
+  text-shadow: 0px 0px 3px snow;
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: -2%;
+  margin-bottom: 2%;
+  color: rgb(20, 20, 20);
+  border: 2px solid rgb(20, 20, 20);
+  box-shadow: 0px 0px 3px snow;
+  border-radius: 50px;
+  padding: 0.7%;
+  padding-top: 7px;
+  transition: transform 500ms;
+}
+.fa-rotate-left:hover {
+  transform: scale(1.1);
 }
 
 .images {

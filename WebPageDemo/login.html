@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/autorize.css">
-    <script defer src="js/login.js"></script>
+    <script defer src="js/auth.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,21 +16,22 @@
         <form  class="form" id="form">
             <div class="form-control">
                 <label>Username/Email</label>
-                <input type="text" placeholder="Username or Email" id="username">
+                <input type="text" placeholder="Username or Email" class="logusername">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-control">
                 <label>Password</label>
-                <input type="password" placeholder="Password" id="password" >
+                <input type="password" placeholder="Password" class="logpassword" >
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
-            <input class="klris" id="loginbtn" type="submit" value="Submit">
+            <input class="logIn" type="submit" value="Submit">
         </form>
         <audio id="losersoundeffect" src="audio/loser.mp3"></audio>
         <audio id="submitsoundeffect" src="audio/submitsound.mp3"></audio>
-    </div></body>
+    </div>
+</body>
 </html>

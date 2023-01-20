@@ -1,5 +1,5 @@
 
-let loginbtn = document.querySelector("#loginbtn")
+let loginbtn = document.querySelector(".loginbtn")
 let losersoundeffect = document.getElementById("losersoundeffect")
 let submitsoundeffect = document.getElementById("submitsoundeffect")
 let form = document.getElementById("form")
@@ -115,17 +115,41 @@ function setSuccessFor(input){
     formControl.className = "form-control success"; 
 }
 
-loginbtn.addEventListener("click", (e)=>{
-    e.preventDefault()
-    if(formDivs.every(e => e.classList.contains('success'))){
-        window.location.href = "login.html"
-        playSubmit()
-    }
-})
+
 
 function playLoser() {
     losersoundeffect.play();
 }
 function playSubmit() {
     submitsoundeffect.play();
+}
+//================================================================================
+
+let login = document.querySelector(".logIn")
+console.log(login)
+login.addEventListener("click", checkData)
+
+function checkData(e){
+  e.preventDefault()
+  let enterName = document.querySelector(".logusername").value;
+  let enterPass = document.querySelector(".logpassword").value;
+  let getName = localStorage.getItem('userName')
+  let getPass = localStorage.getItem('userPassword')
+
+  if(enterName == getName)
+  {
+      if(enterPass == getPass)
+      {
+        alert('Login Succsess \nWelcome dear' +' '+ getName)
+        window.location.href = "index.html"        
+      }
+      else
+      {
+        alert('wrong password')
+      }
+  }
+  else
+  {
+    alert('Invalid Details')
+  }
 }

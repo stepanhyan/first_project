@@ -10,6 +10,8 @@
     <script defer src="js/auth.js"></script>
 </head>
 <body>
+    <div class="allAuth">
+        
     <div class="container">
         <div class="header">
             <h2>Create Account</h2>
@@ -48,6 +50,33 @@
         </form>
         <audio id="losersoundeffect" src="audio/loser.mp3"></audio>
         <audio id="submitsoundeffect" src="audio/submitsound.mp3"></audio>
+    </div>
+
+    
+    <div class="container">
+        <div class="header">
+            <h2>Sign In</h2>
+        </div>
+        <form  class="form" id="form">
+            <div class="form-control">
+                <label>Username/Email</label>
+                <input type="text" placeholder="Username or Email" class="logusername">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Password" class="logpassword" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <input class="logIn" type="submit" value="Submit">
+        </form>
+        <audio id="losersoundeffect" src="audio/loser.mp3"></audio>
+        <audio id="submitsoundeffect" src="audio/submitsound.mp3"></audio>
+    </div>
     </div>
 </body>
 </html>
