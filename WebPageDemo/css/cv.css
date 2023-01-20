@@ -16,66 +16,6 @@ body {
   gap: 0.1em;
 }
 
-.dots :nth-last-child(-n+2) {
-  background-color: burlywood;
-}
-
-.dotsForHTML :nth-last-child(2) {
-  background-color: rgb(83, 58, 24);
-}
-
-.dotsForCSS :nth-last-child(2) {
-  background-color: rgb(83, 58, 24);
-}
-
-.dotsForSCSS :nth-last-child(2) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForFIGMA :nth-last-child(-n+2) {
-  background-color: burlywood;
-}
-
-.dotsForJSON :nth-last-child(2) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForJS :nth-child(4) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForFIREBASE :nth-child(3) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForREDUX :nth-child(1n+3) {
-  background-color: burlywood;
-}
-
-.dotsForGIT :nth-last-child(-n) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForPHP :nth-child(3) {
-  background-color: burlywood;
-}
-
-.dotsForPython :nth-child(3) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForEng :nth-child(3) {
-  background-color: rgb(143, 101, 46);
-}
-
-.dotsForRuss :nth-child(4) {
-  background-color: rgb(83, 58, 24);
-}
-
-.dotsForArm :nth-child(n) {
-  background-color: rgb(83, 58, 24);
-}
-
 .dot {
   width: 13px;
   height: 13px;
@@ -524,4 +464,63 @@ body {
     position: absolute;
     margin: 8px 0px 0px 29px;
   }
+}
+.dots :nth-last-child(-n+2) {
+  background-color: burlywood;
+}
+
+.dotsForHTML :nth-last-child(2) {
+  background-color: rgb(83, 58, 24);
+}
+
+.dotsForCSS :nth-last-child(2) {
+  background-color: rgb(83, 58, 24);
+}
+
+.dotsForSCSS :nth-last-child(2) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForFIGMA :nth-last-child(-n+2) {
+  background-color: burlywood;
+}
+
+.dotsForJSON :nth-last-child(2) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForJS :nth-child(4) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForFIREBASE :nth-child(3) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForREDUX :nth-child(1n+3) {
+  background-color: burlywood;
+}
+
+.dotsForGIT :nth-last-child(-n) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForPHP :nth-child(3) {
+  background-color: burlywood;
+}
+
+.dotsForPython :nth-child(3) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForEng :nth-child(3) {
+  background-color: rgb(143, 101, 46);
+}
+
+.dotsForRuss :nth-child(4) {
+  background-color: rgb(83, 58, 24);
+}
+
+.dotsForArm :nth-child(n) {
+  background-color: rgb(83, 58, 24);
 }/*# sourceMappingURL=cv.css.map */

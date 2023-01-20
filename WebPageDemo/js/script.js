@@ -230,3 +230,34 @@ addPlayer.innerHTML = '<i class="fa-solid fa-circle-plus"></i>'
 setSlider()
 setDots()
 //=========================SLIDER=END=============================//
+let img1 = document.getElementById('img1')
+let img2 = document.getElementById('img2') 
+let img3 = document.getElementById('img3')
+let img4 = document.getElementById('img4')
+let parallax = document.querySelectorAll('.parallax')
+
+
+img1.addEventListener('click',()=>{
+  parallax.forEach(elem => {
+    elem.style.backgroundImage = "url('https://images.pexels.com/photos/5652974/pexels-photo-5652974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+  })
+})
+
+img2.addEventListener('click',()=>{
+  parallax.forEach(elem => {
+    elem.style.backgroundImage = "url('https://images.pexels.com/photos/5653005/pexels-photo-5653005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+  })
+})
+
+img3.addEventListener('click',()=>{
+  parallax.forEach(elem => {
+    elem.style.backgroundImage = "url('https://images.pexels.com/photos/5652998/pexels-photo-5652998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+  })
+})
+
+img4.addEventListener('click',()=>{
+  parallax.forEach(elem => {
+    elem.style.backgroundImage = "url('https://images.pexels.com/photos/5652972/pexels-photo-5652972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+  })
+})
+

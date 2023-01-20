@@ -24,10 +24,11 @@
     gap: 1em;
     width: 17em;
     height: 26em;
-    background: linear-gradient(#2d2929, #bebebe,#2d2929);
+    border: 1px solid rgba(151, 151, 151, 0.5);
+    box-shadow: 0px 0px 3px rgb(222, 222, 222);
     padding-block: 1em;
     border-radius: 20px;
-    [type="text"], [type="password"]{
+    [type="text"]{
         // width: 8rem;
         height: 1.9em;
         font-size: 15px;
@@ -41,6 +42,8 @@
         width: 200px;
         #lblInfo{
           font-size: 20px;
+          color: rgb(25, 25, 25);
+          text-shadow: 1px 1px 4px snow;
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
           display: flex;
           flex-direction: column;
@@ -61,6 +64,8 @@
     }
     #lblTxt{
         font-size: 20px;
+        color: rgb(25, 25, 25);
+        text-shadow: 1px 1px 4px snow;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     [type="submit"]{
@@ -94,15 +99,16 @@
       justify-content: center;
       align-items: center;
       height: 26em;
-      background: linear-gradient(#e5d1d1 ,#272727, #e5d1d1);
+      border: 1px solid rgba(151, 151, 151, 0.5);
+      box-shadow: 0px 0px 3px rgb(222, 222, 222);
       border-radius: 20px;
       #rightbtn, #leftbtn{
         box-shadow: 5px 5px 2.5px rgb(155, 155, 155);
-        border-radius: 2.5mm;
+        border-radius: 9px;
         border: none;
         margin: 10px;
         padding: 8px 10px;
-        background:linear-gradient(#e5d1d1 ,black, #e5d1d1);
+        background:linear-gradient(snow ,black);
         color: aliceblue;
         cursor: pointer;
         transition: transform box-shadow 200ms ease-in;
