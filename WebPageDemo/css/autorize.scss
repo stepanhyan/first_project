@@ -42,7 +42,7 @@ body{
     }
 }
 
-.form{
+.form, .formReg{
     padding: 30px 40px;
 
     .form-control {
@@ -75,7 +75,7 @@ body{
             left: 0;
         }
     }    
-    .loginbtn, .logIn{
+    #loginbtn, #logIn ,#regbtn{
         background-color:  #8e44ad;
         border: 2px solid #8e44ad;
         border-radius: 4px;

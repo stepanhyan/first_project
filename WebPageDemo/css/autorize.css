@@ -40,19 +40,19 @@ body {
   margin: 0;
 }
 
-.form {
+.form, .formReg {
   padding: 30px 40px;
 }
-.form .form-control {
+.form .form-control, .formReg .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
-.form .form-control label {
+.form .form-control label, .formReg .form-control label {
   display: inline-block;
   margin-bottom: 5px;
 }
-.form .form-control input {
+.form .form-control input, .formReg .form-control input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -60,19 +60,19 @@ body {
   font-size: 14px;
   padding: 10px;
 }
-.form .form-control i {
+.form .form-control i, .formReg .form-control i {
   visibility: hidden;
   position: absolute;
   top: 35px;
   right: 10px;
 }
-.form .form-control small {
+.form .form-control small, .formReg .form-control small {
   visibility: hidden;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.form .loginbtn, .form .logIn {
+.form #loginbtn, .form #logIn, .form #regbtn, .formReg #loginbtn, .formReg #logIn, .formReg #regbtn {
   background-color: #8e44ad;
   border: 2px solid #8e44ad;
   border-radius: 4px;
@@ -86,24 +86,24 @@ body {
   margin: 0 auto;
   transition: transform 250ms ease-in-out;
 }
-.form .loginbtn:hover, .form .logIn:hover {
+.form #loginbtn:hover, .form #logIn:hover, .form #regbtn:hover, .formReg #loginbtn:hover, .formReg #logIn:hover, .formReg #regbtn:hover {
   transform: scale(1.1);
 }
-.form .form-control.success input {
+.form .form-control.success input, .formReg .form-control.success input {
   border-color: #2ecc71;
 }
-.form .form-control.success i.fa-check-circle {
+.form .form-control.success i.fa-check-circle, .formReg .form-control.success i.fa-check-circle {
   visibility: visible;
   color: #2ecc71;
 }
-.form .form-control.error input {
+.form .form-control.error input, .formReg .form-control.error input {
   border-color: #e74c3c;
 }
-.form .form-control.error i.fa-exclamation-circle {
+.form .form-control.error i.fa-exclamation-circle, .formReg .form-control.error i.fa-exclamation-circle {
   visibility: visible;
   color: #e74c3c;
 }
-.form .form-control.error small {
+.form .form-control.error small, .formReg .form-control.error small {
   visibility: visible;
   color: #e74c3c;
 }/*# sourceMappingURL=autorize.css.map */

@@ -12,7 +12,6 @@
   font-family: 'Poppins', sans-serif;
 }
 #userLoged{
-  z-index: 100;
   color: snow;
   margin-top: 5%;
   font-size: 20px;
@@ -21,7 +20,6 @@
 }
 .parallax {
   background-image: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  width: 100vw;
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -30,28 +28,34 @@
 }
 
 .section {
+
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 2mm;
   position: relative;
   height: fit-content;
-  width: 100%;
-  background-color: #222;
+  width: 90%;
+  background-color: rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
   place-content: center;
   align-items: center;
   overflow: hidden;
 
+
   .gradient {
     position: absolute;
     transition: all 500ms ease-out;
     --size: 400px;
     --speed: 15s;
-    // --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
     --easing: ease-in-out;
-  
+    // --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
     // width: var(--size);
+    // height: var(--size);
     width: 100%;
     height: 150%;
-    // height: var(--size);
     filter: blur(calc(var(--size) / 5));
     background-image: linear-gradient(burlywood, snow);
     opacity: 0.5;
@@ -70,19 +74,18 @@
     }
   }
 
-
 }
-
+.sectionTitle{
+  font-size: 30px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .blend {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   min-height: 450px;
   h1 {
-    // position: absolute;
-    // top: 355px;
-    // left: 500px;
-    z-index: 1;
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
     margin-bottom: 5mm;
     font-size: 5vw;
     mix-blend-mode: overlay;
@@ -93,30 +96,25 @@
 }
 
 .sometext{
+  position: relative;
+  z-index: 50;
   padding: 5%;
   font-family: 'Courier New', Courier, monospace;
   z-index: 2;
   font-size: 25px;
   text-align: center;
   font-weight: bold;
-  color: snow;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px snow;
 }
 .xo{
   z-index: 2;
   width: 100%;
 }
 
-// #special {
-// //   z-index: 2;
-//           clip-path: polygon(5% 7%, 100% 20%, 900% 75%, 75% 75%, 75% 100%, 60% 75%, 20% 80%);
-// }
-
-// .specdiv {
-//   background-color: bisque;
-// }
 
 .fa-rotate-left{
-  z-index: 20;
+  z-index: 2;
   text-shadow: 0px 0px 3px snow;
   cursor: pointer;
   font-size: 40px;
@@ -127,7 +125,7 @@
   box-shadow: 0px 0px 3px snow;
   border-radius: 50px;
   padding: 0.7%;
-  padding-top: 7px;
+  padding-top: 0.7%;
   transition: transform 500ms;
   &:hover{
     transform: scale(1.1);

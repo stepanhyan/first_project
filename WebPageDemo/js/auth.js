@@ -1,12 +1,39 @@
+let loginbtn = document.getElementById("loginbtn")
+// console.log(login)
+loginbtn.addEventListener("click", logedin)
+function logedin(e){
+  e.preventDefault()
+  let enterName = document.getElementById("loginuser").value;
+  let enterPass = document.getElementById("loginpassword").value;
+  let getName = localStorage.getItem('userName')
+  let getPass = localStorage.getItem('userPassword')
+    if(enterName == getName)
+    {
+        if(enterPass == getPass){
+          playSubmit()
+          alert("Logedin Succsess")
+          // window.location.href = "index.html"        
+        }
+        else
+        {
+          alert('wrong password')
+        }
+    }
+    else
+    {
+      alert('Invalid Details')
+    }
+  }
+  //=====================================================
 
-let loginbtn = document.querySelector(".loginbtn")
-let losersoundeffect = document.getElementById("losersoundeffect")
-let submitsoundeffect = document.getElementById("submitsoundeffect")
-let form = document.getElementById("form")
-let username = document.getElementById("username")
-let email = document.getElementById("email")
-let password = document.getElementById("password")
-let password2 = document.getElementById("password2")
+let losersoundeffect = document.querySelector(".losersoundeffect")
+let submitsoundeffect = document.querySelector(".submitsoundeffect")
+let regbtn = document.getElementById("regbtn")
+let form = document.getElementById("regForm")
+let username = document.getElementById("reguser")
+let email = document.getElementById("regemail")
+let password = document.getElementById("regpassword")
+let password2 = document.getElementById("regpassword2")
 
 let formDivs =  Array.from(form.getElementsByClassName("form-control"))
 
@@ -61,41 +88,39 @@ function checkInputs(){
 function checkFilled(){
     if((formDivs.every(e => e.classList.contains('success'))))
     {
-        loginbtn.removeEventListener("mouseenter", catchButton)
-        loginbtn.removeEventListener("click", playLoser)
-        loginbtn.addEventListener("click", playSubmit)
-        loginbtn.style.transform = 'translateX(0)'
-        loginbtn.style.transition = 'transform 100ms ease-in-out';
-        loginbtn.addEventListener("mouseover", over=()=>{
-            loginbtn.style.transform = 'scale(1.05)'
+        regbtn.removeEventListener("mouseenter", catchButton)
+        regbtn.removeEventListener("click", playLoser)
+        regbtn.style.transform = 'translateX(0)'
+        regbtn.style.transition = 'transform 100ms ease-in-out';
+        regbtn.addEventListener("mouseover", over=()=>{
+            regbtn.style.transform = 'scale(1.05)'
         })
-        loginbtn.addEventListener("mouseout", out=()=>{
-            loginbtn.style.transform = 'scale(1)'
+        regbtn.addEventListener("mouseout", out=()=>{
+            regbtn.style.transform = 'scale(1)'
         })
-        loginbtn.addEventListener("mousedown",  down=()=>{
-            loginbtn.style.transform = 'scale(0.88)'
+        regbtn.addEventListener("mousedown",  down=()=>{
+            regbtn.style.transform = 'scale(0.88)'
         })
-        loginbtn.addEventListener("mouseup", up=()=>{
-            loginbtn.style.transform = 'scale(0.99)'
+        regbtn.addEventListener("mouseup", up=()=>{
+            regbtn.style.transform = 'scale(0.99)'
         })
     }else {
-        loginbtn.addEventListener("mouseenter", catchButton)
-        loginbtn.addEventListener("click", playLoser)
-        loginbtn.removeEventListener("mouseover",over)
-        loginbtn.removeEventListener("mouseout",out)
-        loginbtn.removeEventListener("mousedown",down)
-        loginbtn.removeEventListener("mouseup",up)
-        loginbtn.removeEventListener("click", playSubmit)
-        loginbtn.style.transition = 'transform 220ms ease-in-out';
+        regbtn.addEventListener("mouseenter", catchButton)
+        regbtn.addEventListener("click", playLoser)
+        regbtn.removeEventListener("mouseover",over)
+        regbtn.removeEventListener("mouseout",out)
+        regbtn.removeEventListener("mousedown",down)
+        regbtn.removeEventListener("mouseup",up)
+        regbtn.style.transition = 'transform 220ms ease-in-out';
     }
 }
 
 function catchButton(){
-    if(loginbtn.style.transform != 'translateX(-100%)'){
-       loginbtn.style.transform = 'translateX(-100%)'
+    if(regbtn.style.transform != 'translateX(-100%)'){
+       regbtn.style.transform = 'translateX(-100%)'
     }
     else {
-        loginbtn.style.transform = 'translateX(100%)'
+        regbtn.style.transform = 'translateX(100%)'
     }
 }
 
@@ -123,33 +148,14 @@ function playLoser() {
 function playSubmit() {
     submitsoundeffect.play();
 }
-//================================================================================
+regbtn.addEventListener("click", registered)
 
-let login = document.querySelector(".logIn")
-console.log(login)
-login.addEventListener("click", checkData)
-
-function checkData(e){
+function registered(e){
   e.preventDefault()
-  let enterName = document.querySelector(".logusername").value;
-  let enterPass = document.querySelector(".logpassword").value;
-  let getName = localStorage.getItem('userName')
-  let getPass = localStorage.getItem('userPassword')
-
-  if(enterName == getName)
-  {
-      if(enterPass == getPass)
-      {
-        alert('Login Succsess \nWelcome dear' +' '+ getName)
-        window.location.href = "index.html"        
-      }
-      else
-      {
-        alert('wrong password')
-      }
-  }
-  else
-  {
-    alert('Invalid Details')
+  if(formDivs.every(e => e.classList.contains('success'))){
+      // window.location.href = "index.html"
+      playSubmit()
+      alert("Registered")
   }
 }
+
