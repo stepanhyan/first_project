@@ -30,17 +30,18 @@
 
 
 .blokbox{
+  z-index: 30;
   width: 100px;
   height: 100px;
   border: 1px solid black;
   border-radius: 20px;
   box-sizing: border-box;
   font-size: 35px;
-  color: rgb(49, 45, 45);
+  // color: rgb(49, 45, 45);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 95, 173);
+  background-color: rgba(70, 70, 70, 0.7);
   cursor: pointer;
   font-family: 'Rubik Bubbles', cursive;
 }
@@ -79,7 +80,7 @@
 #btn-close{
   width: 150px;
   height: 20px;
-  background-color: blue;
+  background-color: rgba(137, 137, 137, 0.5);
   color: rgb(0, 0, 0);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px ;

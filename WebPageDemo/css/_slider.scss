@@ -265,7 +265,7 @@
       #textarea{
           resize: none;
           border-radius: 1.5mm;
-          width: 14.5em;
+          width: 13.7em;
       }
       
     }
@@ -275,17 +275,21 @@
         height: 22em;
         width: 13em;
         #rightbtn, #leftbtn{
-          border-radius: 2mm;
-          margin: 3px;
-          padding: 5px 3.5px;
+          margin: 3%;
+          padding: 7px 5px;
+          box-shadow: 1px 1px 10px rgb(155, 155, 155);
+          border-radius: 8px;
+          &:hover{
+            transform: translate(0px, 3px);
+          }
         }
         .slider{
-          margin-bottom: 15%;
-          width: 8em;
+          margin-bottom: 17%;
+          width: 8.3em;
           height: 17.5em;
           .swrapper{
             .card{
-              width: 8em;
+              width: 8.3em;
               height: 17.5em;
               img{
                 width: 100%;
@@ -300,30 +304,14 @@
       }
   
       .sliderDots{
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        gap: 8px;
-        margin-top: -45px;
+        gap: 7px;
         .btnBlock{
             display: flex;
             flex-direction: row-reverse;
             gap: 20px; 
             #remButn, .addedPlayer{
-                color: #048f37;
-                width: 2em;
+                width: 1.5em;
                 height: 1.35em;
-                border-radius: 10px;
-                border: none;
-                transition:  background-color 500ms ease-in-out;
-                cursor: pointer;
-                box-shadow: 2px 2px  2px  rgb(100, 100, 100);
-                
-                &:hover{
-                    background-color: #048f37;
-                    color: rgb(32, 32, 32);
-                    box-shadow: none;
-                }
             }
         }
     }

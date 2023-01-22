@@ -12,7 +12,7 @@ function logedin(e){
         if(enterPass == getPass){
           playSubmit()
           alert("Logedin Succsess")
-          // window.location.href = "index.html"        
+          window.location.href = "index.html"        
         }
         else
         {
