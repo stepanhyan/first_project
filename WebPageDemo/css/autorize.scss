@@ -116,3 +116,110 @@ body{
     }
 }
 
+@media screen and (max-width: 830px){
+    .allAuth{
+        gap: 2%;
+    }
+
+    .container{
+        width: 330px;
+    }
+    .header{
+        padding: 15px 30px;
+    }
+    .form{
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width: 670px){
+    
+    .allAuth{
+        gap: 1.5%;
+    }
+
+    .container{
+        width: 245px;
+    }
+    .header{
+        padding: 15px 30px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formReg{
+        padding: 10px 20px;
+        .form-control {
+            margin-left: 0.7%;
+            margin-bottom: 3%;
+            padding-bottom: 10px;
+            font-size: 13px;
+        
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                font-size: 11px;
+                padding: 10px;
+            }
+        }
+        #loginbtn{
+            width: 70px;
+            padding: 8px 12px;
+            font-size: 10px;
+        }    
+        .form-control.success{
+            i.fa-check-circle{
+                margin-top: -2%;
+            }
+        }
+        .form-control.error {
+            i.fa-exclamation-circle{
+                margin-top: -1.5%;
+
+            }
+            small{
+                font-size: 10px;
+                margin-bottom: -2%;
+            }
+        }
+    }
+    .form{
+        padding: 10px 25px;
+    
+        .form-control {
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            font-size: 12px;
+        
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                font-size: 11px;
+                padding: 10px;
+            }
+        }    
+        #regbtn, #loginbtn,#logIn{
+            width: 70px;
+            padding: 8px 12px;
+            font-size: 10px;
+        }
+        .form-control.success{
+            i.fa-check-circle{
+                color: #2ecc71;
+                margin-top: -2%;
+            }
+        }
+        .form-control.error {
+            i.fa-exclamation-circle{
+                margin-top: -1.5%;
+
+            }
+            small{
+                font-size: 10px;
+                margin-bottom: -2%;
+            }
+        }
+    }
+}

@@ -396,7 +396,6 @@
 
 .wrapper {
   background: #111;
-  opacity: 0.9;
   width: 100%;
 }
 
@@ -659,6 +658,157 @@ nav .content .links {
     padding-right: 30px;
   }
 }
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  color: rgb(105, 105, 105);
+}
+footer .main-content {
+  display: flex;
+}
+footer .main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+footer .box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .box .content2 {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+footer .box .content2:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+footer .box .content2:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+footer .left .content2 p {
+  text-align: justify;
+}
+footer .left .content2 .social {
+  margin: 20px 0 0 0;
+}
+footer .left .content2 .social a {
+  padding: 0 2px;
+}
+footer .left .content2 .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+footer .left .content2 .social a span:hover {
+  background: #f12020;
+}
+footer .center .content2 .fas {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer .center .content2 .fas:hover {
+  background: #f12020;
+}
+footer .center .content2 .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+footer .center .content2 .phone {
+  margin: 15px 0;
+}
+footer .right form .text {
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+footer .right form .msg {
+  margin-top: 10px;
+}
+footer .right form input, footer .right form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+footer .right form input:focus,
+footer .right form textarea:focus {
+  outline-color: #3498db;
+}
+footer .right form input {
+  height: 35px;
+}
+footer .right form .btn {
+  margin-top: 10px;
+}
+footer .right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer .right form .btn button:hover {
+  background: #000;
+}
+footer .bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+footer .bottom center span {
+  color: #656565;
+}
+footer .bottom center a {
+  color: #f12020;
+  text-decoration: none;
+}
+footer .bottom center a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer footer {
+    position: relative;
+    bottom: 0px;
+  }
+  footer .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .main-content .box {
+    margin: 5px 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -812,155 +962,4 @@ nav .content .links {
 .images img:hover {
   transform: scale(1.25);
   border-radius: 10px;
-}
-
-footer {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  background: #111;
-  color: rgb(105, 105, 105);
-}
-footer .main-content {
-  display: flex;
-}
-footer .main-content .box {
-  flex-basis: 50%;
-  padding: 10px 20px;
-}
-footer .box h2 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-footer .box .content2 {
-  margin: 20px 0 0 0;
-  position: relative;
-}
-footer .box .content2:before {
-  position: absolute;
-  content: "";
-  top: -10px;
-  height: 2px;
-  width: 100%;
-  background: #1a1a1a;
-}
-footer .box .content2:after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 15%;
-  background: #f12020;
-  top: -10px;
-}
-footer .left .content2 p {
-  text-align: justify;
-}
-footer .left .content2 .social {
-  margin: 20px 0 0 0;
-}
-footer .left .content2 .social a {
-  padding: 0 2px;
-}
-footer .left .content2 .social a span {
-  height: 40px;
-  width: 40px;
-  background: #1a1a1a;
-  line-height: 40px;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-footer .left .content2 .social a span:hover {
-  background: #f12020;
-}
-footer .center .content2 .fas {
-  font-size: 1.4375rem;
-  background: #1a1a1a;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-}
-footer .center .content2 .fas:hover {
-  background: #f12020;
-}
-footer .center .content2 .text {
-  font-size: 1.0625rem;
-  font-weight: 500;
-  padding-left: 10px;
-}
-footer .center .content2 .phone {
-  margin: 15px 0;
-}
-footer .right form .text {
-  font-size: 1.0625rem;
-  margin-bottom: 2px;
-  color: #656565;
-}
-footer .right form .msg {
-  margin-top: 10px;
-}
-footer .right form input, footer .right form textarea {
-  width: 100%;
-  font-size: 1.0625rem;
-  background: #151515;
-  padding-left: 10px;
-  border: 1px solid #222222;
-}
-footer .right form input:focus,
-footer .right form textarea:focus {
-  outline-color: #3498db;
-}
-footer .right form input {
-  height: 35px;
-}
-footer .right form .btn {
-  margin-top: 10px;
-}
-footer .right form .btn button {
-  height: 40px;
-  width: 100%;
-  border: none;
-  outline: none;
-  background: #f12020;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-footer .right form .btn button:hover {
-  background: #000;
-}
-footer .bottom center {
-  padding: 5px;
-  font-size: 0.9375rem;
-  background: #151515;
-}
-footer .bottom center span {
-  color: #656565;
-}
-footer .bottom center a {
-  color: #f12020;
-  text-decoration: none;
-}
-footer .bottom center a:hover {
-  text-decoration: underline;
-}
-@media screen and (max-width: 900px) {
-  footer footer {
-    position: relative;
-    bottom: 0px;
-  }
-  footer .main-content {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  footer .main-content .box {
-    margin: 5px 0;
-  }
 }/*# sourceMappingURL=style.css.map */
