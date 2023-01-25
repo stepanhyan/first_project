@@ -30,6 +30,7 @@
 .container #formsumb [type=text] {
   height: 1.9em;
   font-size: 15px;
+  border: none;
   border-radius: 15em;
   padding: 10px;
 }
@@ -291,6 +292,90 @@
   }
   .container article .sliderDots .btnBlock #remButn, .container article .sliderDots .btnBlock .addedPlayer {
     width: 1.5em;
+    height: 1.35em;
+  }
+}
+@media screen and (max-width: 520px) {
+  .container #formsumb {
+    gap: 4%;
+    width: 9em;
+    height: 20em;
+  }
+  .container #formsumb [type=text] {
+    width: 10.5em;
+    height: 1em;
+    font-size: 12px;
+    border: none;
+  }
+  .container #formsumb .fileDiv {
+    padding: 3px 0px 10px 0px;
+    width: 120px;
+  }
+  .container #formsumb .fileDiv #lblInfo {
+    font-size: 13px;
+  }
+  .container #formsumb .fileDiv #lblInfo .imageIcon {
+    margin-top: 8%;
+    font-size: 1em;
+  }
+  .container #formsumb #lblTxt {
+    font-size: 13px;
+  }
+  .container #formsumb [type=submit] {
+    width: 80px;
+    height: 30px;
+    font-size: small;
+  }
+  .container #formsumb #textarea {
+    resize: none;
+    border-radius: 1.5mm;
+    width: 9.8em;
+    height: 88px;
+  }
+  .container article .players {
+    width: 10.5em;
+    height: 20em;
+  }
+  .container article .players #rightbtn, .container article .players #leftbtn {
+    margin: 0%;
+    padding: 7px 5px;
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
+    border-radius: 2mm;
+  }
+  .container article .players #rightbtn:hover, .container article .players #leftbtn:hover {
+    transform: translate(0px, 3px);
+  }
+  .container article .players .slider {
+    margin-bottom: 17%;
+    width: 7em;
+    height: 15.8em;
+    margin-top: -0.7%;
+  }
+  .container article .players .slider .swrapper .card {
+    width: 7em;
+    height: 15.8em;
+    margin-top: -0.7%;
+  }
+  .container article .players .slider .swrapper .card .name, .container article .players .slider .swrapper .card .club {
+    font-size: 12px;
+  }
+  .container article .players .slider .swrapper .card img {
+    width: 100%;
+    min-height: 60%;
+  }
+  .container article .players .slider .swrapper .card .containerForP {
+    height: 5em;
+  }
+  .container article .sliderDots {
+    gap: 5px;
+  }
+  .container article .sliderDots .btnBlock {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  .container article .sliderDots .btnBlock #remButn, .container article .sliderDots .btnBlock .addedPlayer {
+    width: 4.9em;
     height: 1.35em;
   }
 }
@@ -580,6 +665,14 @@ nav .content .links {
     padding: 0 100px 0 15px;
   }
 }
+@media screen and (max-width: 1074px) {
+  .wrapper {
+    width: 100%;
+  }
+  .auth {
+    white-space: nowrap;
+  }
+}
 @media screen and (max-width: 900px) {
   .wrapper .menu-icon {
     display: block;
@@ -591,7 +684,7 @@ nav .content .links {
     z-index: 50;
     display: block;
     position: absolute;
-    background: #14181f;
+    background: #111;
     width: 100%;
     top: 70px;
     left: -100%;
@@ -850,6 +943,10 @@ footer .bottom center a:hover {
   place-content: center;
   align-items: center;
   overflow: hidden;
+  min-width: 330px;
+}
+.section:hover {
+  transform: scale3d(1, 1, 1);
 }
 .section .gradient {
   position: absolute;
@@ -922,6 +1019,7 @@ footer .bottom center a:hover {
 .xo {
   z-index: 2;
   width: 100%;
+  padding-bottom: 3%;
 }
 
 .fa-rotate-left {

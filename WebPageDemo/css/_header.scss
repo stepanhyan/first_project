@@ -149,6 +149,12 @@ nav .content .links{
 
 /* Responsive code start */
 @media screen and (max-width: 1250px){
+
+
+  // .search-icon{
+  //   margin-left: 10%;
+  // }
+
   .wrapper nav{
     max-width: 100%;
     padding: 0 20px;
@@ -166,8 +172,18 @@ nav .content .links{
     padding: 0 100px 0 15px;
   }
 }
+@media screen and (max-width: 1074px){
+  .wrapper{
+    width: 100%;
+  }
+  .auth{
+    white-space: nowrap;
+  }
+
+}
 
 @media screen and (max-width: 900px){
+
   .wrapper .menu-icon{
     display: block;
   }
@@ -178,7 +194,7 @@ nav .content .links{
     z-index: 50;
     display: block;
     position: absolute;
-    background: #14181f;
+    background: #111;
     // height: 100%;
     width: 100%;
     top: 70px;
@@ -192,6 +208,7 @@ nav .content .links{
   nav #show-menu:checked ~ .content .links{
     left: 0%;
   }
+  
   .content .links li{
     margin: 15px 20px;
   }
@@ -232,7 +249,11 @@ nav .content .links{
   }
 }
 
+
+
+
 @media screen and (max-width: 400px){
+
   .wrapper nav{
     // position: relative;
     padding: 0 10px;

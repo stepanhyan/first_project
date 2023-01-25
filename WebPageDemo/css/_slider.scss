@@ -32,6 +32,7 @@
         // width: 8rem;
         height: 1.9em;
         font-size: 15px;
+        border: none;
         border-radius: 15em;
         padding: 10px;
     }
@@ -311,6 +312,102 @@
             gap: 20px; 
             #remButn, .addedPlayer{
                 width: 1.5em;
+                height: 1.35em;
+            }
+        }
+    }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .container{
+    #formsumb{
+      gap: 4%;
+      width: 9em;
+      height: 20em;    
+      [type="text"]{
+        width: 10.5em;
+        height: 1em;
+        font-size: 12px;
+        border: none;
+      }
+      .fileDiv{
+          padding: 3px 0px 10px 0px;
+          width: 120px;
+          #lblInfo{
+            font-size: 13px;           
+            .imageIcon{
+              margin-top: 8%;
+              font-size: 1em;
+
+            }
+          }
+      }
+      #lblTxt{
+        font-size: 13px;
+      }
+      [type="submit"]{
+        width: 80px;
+        height: 30px;
+        // padding: 2.3px;
+        font-size: small;
+      }
+      #textarea{
+          resize: none;
+          border-radius: 1.5mm;
+          width: 9.8em;
+          height: 88px;
+      }
+      
+    }
+  
+    article{
+      .players{
+        width: 10.5em;
+        height: 20em; 
+        #rightbtn, #leftbtn{
+          margin: 0%;
+          padding: 7px 5px;
+          box-shadow: 1px 1px 5px rgb(155, 155, 155);
+          border-radius: 2mm;
+          &:hover{
+            transform: translate(0px, 3px);
+          }
+        }
+
+        .slider{
+          margin-bottom: 17%;
+          width: 7em;
+          height: 15.8em;
+          margin-top: -0.7%;
+          .swrapper{
+            .card{
+              width: 7em;
+              height: 15.8em;
+              margin-top: -0.7%;
+              .name, .club{
+                font-size: 12px;
+              }
+              img{
+                width: 100%;
+                min-height: 60%;
+              }
+              .containerForP{
+                height: 5em;
+              }
+            }
+          }
+        }
+      }
+      
+      .sliderDots{
+        gap: 5px;
+        .btnBlock{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px; 
+            #remButn, .addedPlayer{
+                width: 4.9em;
                 height: 1.35em;
             }
         }

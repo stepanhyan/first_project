@@ -45,7 +45,11 @@
   flex-direction: column;
   place-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden; 
+  min-width: 330px;
+  &:hover{
+    transform: scale3d(1, 1, 1);
+  }
 
 
   .gradient {
@@ -116,6 +120,7 @@
 .xo{
   z-index: 2;
   width: 100%;
+  padding-bottom: 3%;
 }
 
 
