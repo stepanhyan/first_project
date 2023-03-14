@@ -278,27 +278,27 @@ if(localStorage.getItem('userName') != null){
 
 //==============================================================//
 
-const animatedSection = document.querySelector(".animatedSection");
-const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
-const THRESHOLD = 15;
+// const animatedSection = document.querySelector(".animatedSection");
+// const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
+// const THRESHOLD = 15;
 
-function handleHover(e) {
-  const { clientX, clientY, currentTarget } = e;
-  const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
+// function handleHover(e) {
+//   const { clientX, clientY, currentTarget } = e;
+//   const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
 
-  const horizontal = (clientX - offsetLeft) / clientWidth;
-  const vertical = (clientY - offsetTop) / clientHeight;
-  const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-  const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+//   const horizontal = (clientX - offsetLeft) / clientWidth;
+//   const vertical = (clientY - offsetTop) / clientHeight;
+//   const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+//   const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
 
-  animatedSection.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
-}
+//   animatedSection.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+// }
 
-function resetStyles(e) {
-  animatedSection.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
-}
+// function resetStyles(e) {
+//   animatedSection.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+// }
 
-if (!motionMatchMedia.matches) {
-  animatedSection.addEventListener("mousemove", handleHover);
-  animatedSection.addEventListener("mouseleave", resetStyles);
-}
+// if (!motionMatchMedia.matches) {
+//   animatedSection.addEventListener("mousemove", handleHover);
+//   animatedSection.addEventListener("mouseleave", resetStyles);
+// }

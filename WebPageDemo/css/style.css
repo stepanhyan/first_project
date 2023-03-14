@@ -122,7 +122,6 @@
   overflow: hidden;
 }
 .container article .players .slider .swrapper {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -402,7 +401,6 @@
 }
 
 #area {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: grid;
@@ -582,10 +580,6 @@ nav .content .links {
   color: #ffffff;
 }
 
-.search-box input:-ms-input-placeholder {
-  color: #ffffff;
-}
-
 .search-box input::placeholder {
   color: #ffffff;
 }
@@ -700,7 +694,7 @@ nav .content .links {
     margin: 15px 20px;
   }
   .content .links li a,
-.content .links li label {
+  .content .links li label {
     line-height: 40px;
     font-size: 20px;
     display: block;
@@ -712,7 +706,7 @@ nav .content .links {
   }
   /* dropdown responsive code start */
   .content .links ul,
-.content .links ul ul {
+  .content .links ul ul {
     position: static;
     opacity: 1;
     visibility: visible;
@@ -721,8 +715,8 @@ nav .content .links {
     overflow: hidden;
   }
   .content .links #show-features:checked ~ ul,
-.content .links #show-services:checked ~ ul,
-.content .links #show-items:checked ~ ul {
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul {
     max-height: 100vh;
   }
   .content .links ul li {
@@ -931,7 +925,6 @@ footer .bottom center a:hover {
   position: relative;
   width: 90%;
   min-width: 330px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
@@ -958,16 +951,7 @@ footer .bottom center a:hover {
   filter: blur(calc(var(--size) / 5));
   background-image: linear-gradient(burlywood, snow);
   opacity: 0.5;
-  -webkit-animation: rotate var(--speed) var(--easing) alternate infinite;
-          animation: rotate var(--speed) var(--easing) alternate infinite;
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: translateY(-90%);
-  }
-  100% {
-    transform: translateY(90%);
-  }
+  animation: rotate var(--speed) var(--easing) alternate infinite;
 }
 @keyframes rotate {
   0% {
@@ -976,25 +960,6 @@ footer .bottom center a:hover {
   100% {
     transform: translateY(90%);
   }
-}
-
-.animatedSection {
-  background-size: cover;
-  max-width: 1730px;
-  margin: auto;
-  height: auto;
-  padding: 40px;
-  position: relative;
-  color: #fff;
-  transition: transform 0.1s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s ease;
 }
 
 .sectionTitle {
