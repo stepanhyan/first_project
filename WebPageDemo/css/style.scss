@@ -32,23 +32,23 @@
 
 .section {
 
-  position: relative;
   z-index: 1;
+  position: relative;
+  width: 90%;
+  min-width: 330px;
+  height: fit-content;
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 2mm;
-  position: relative;
-  height: fit-content;
-  width: 90%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
   place-content: center;
   align-items: center;
   overflow: hidden; 
-  min-width: 330px;
   &:hover{
     transform: scale3d(1, 1, 1);
+    // background-color: red;
   }
 
 
@@ -82,6 +82,31 @@
   }
 
 }
+
+.animatedSection {
+  background-size: cover;
+  max-width: 1730px;
+  margin: auto;
+  height: auto;
+  padding: 40px;
+  position: relative;
+  color: #fff;
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  // &:hover{
+  //   transform: scale3d(1, 1, 1);
+  //   background-color: red;
+  // }
+
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
 .sectionTitle{
   padding: 1%;
   z-index: 5;
